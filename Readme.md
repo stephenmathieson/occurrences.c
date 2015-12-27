@@ -11,7 +11,7 @@
 
 ## API
 
-### `int occurrences(const char *needle, const char *haystack)`
+### `size_t occurrences(const char *needle, const char *haystack)`
 
   Get the number of occurrences of `needle` in `haystack`
 
