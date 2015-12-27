@@ -7,8 +7,8 @@
 //
 
 
-#ifndef __OCCURRENCES__
-#define __OCCURRENCES__ 1
+#ifndef OCCURRENCES_H
+#define OCCURRENCES_H 1
 
 size_t
 occurrences(const char *, const char *);
