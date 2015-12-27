@@ -6,8 +6,8 @@
   "keywords": [ "string", "occurrences", "count" ],
   "license": "MIT",
   "src": [
-    "src/occurrences.c",
-    "src/occurrences.h"
+    "occurrences.c",
+    "occurrences.h"
   ],
   "development": {
     "stephenmathieson/describe.h": "2.0.1"
