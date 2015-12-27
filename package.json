@@ -8,5 +8,8 @@
   "src": [
     "src/occurrences.c",
     "src/occurrences.h"
-  ]
+  ],
+  "development": {
+    "stephenmathieson/describe.h": "2.0.1"
+  }
 }
