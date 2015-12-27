@@ -1,1 +1,4 @@
-test-occurrences
+deps
+test
+test.o
+occurrences.o

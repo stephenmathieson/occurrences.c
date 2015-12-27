@@ -1,8 +1,21 @@
 
-test: test-occurrences
+CC ?= gcc
+CFLAGS += -std=c99 -Wall -Wextra -Ideps
+DEPS := $(wildcard deps/*/*.c)
+OBJS := occurrences.o $(DEPS:.c=.o)
 
-test-occurrences: test/test.c src/occurrences.c
-	$(CC) -std=c99 $^ -o $@
-	./$@
+.DEFAULT_GOAL := validate
 
-.PHONY: test test-occurrences
+test: test.o $(OBJS)
+
+deps: package.json
+	clib install --dev
+	@touch $@
+
+validate: test
+	./$<
+
+clean:
+	rm -f $(OBJS) occurrences.o test.o test
+
+.PHONY: validate clean
