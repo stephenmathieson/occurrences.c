@@ -8,6 +8,8 @@ OBJS := occurrences.o $(DEPS:.c=.o)
 
 test: test.o $(OBJS)
 
+occurrences.o: occurrences.c occurrences.h
+
 deps: package.json
 	clib install --dev
 	@touch $@
