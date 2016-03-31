@@ -21,6 +21,7 @@ occurrences(const char *needle, const char *haystack) {
   char *pos = (char *)haystack;
   size_t i = 0;
   size_t l = strlen(needle);
+  if (l == 0) return 0;
 
   while ((pos = strstr(pos, needle))) {
     pos += l;
